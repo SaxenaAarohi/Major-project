@@ -16,7 +16,7 @@ const Dashboard = () => {
     }
 
     return (
-        <div className={`flex flex-wrap h-screen ${mode==='dark' ? 'bg-black' : ''} gap-2 md:gap-8 `}>
+        <div className={`flex overflow-x-auto h-screen ${mode==='dark' ? 'bg-black' : ''} gap-2 md:gap-8 `}>
             <DragDropContext onDragEnd={handledropitem}>
                 {
                     keys.map((item) => {

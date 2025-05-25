@@ -21,7 +21,7 @@ const DisplayColumn = ({ colkey }) => {
 
   return (
     <div className='ml-4'>
-      <div className='w-28 md:w-52 dark:text-white font-bold pb-1 pl-2'>
+      <div className='w-64 md:w-52 dark:text-white font-bold pb-1 pl-2'>
         <h2>{colkey}</h2>
       </div>
 
@@ -30,7 +30,7 @@ const DisplayColumn = ({ colkey }) => {
           <div
             ref={provided.innerRef}
             {...provided.droppableProps}
-            className='w-28 md:w-52 border border-dashed p-2'
+            className='w-64 md:w-52  p-2'
           >
             {items.length > 0 ? (
               items.map((item, index) => (
@@ -63,7 +63,7 @@ const DisplayColumn = ({ colkey }) => {
                 </Draggable>
               ))
             ) : (
-              <div className='h-[calc(100vh-60px)] pb-2 pl-2 border border-black border-dashed' />
+              <div className='h-[calc(100vh-60px)] pb-2 pl-2 border-2 border-dashed ' />
             )}
             {provided.placeholder}
           </div>
